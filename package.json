@@ -15,7 +15,9 @@
     "@types/react": "^18.2.58",
     "@types/react-dom": "^18.2.19",
     "@types/react-modal": "^3.16.3",
+    "crypto-js": "^4.2.0",
     "geist": "^1.2.2",
+    "n-krypta": "^1.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",
@@ -47,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2"
   }
 }

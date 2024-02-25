@@ -10,6 +10,7 @@ import DataWidget from '../Widgets/DataWidget/DataWidget'
 import GraphWidget from '../Widgets/GraphWidget/GraphWidget'
 import SummaryWidget from '../Widgets/SummaryWidget/SummaryWidget'
 import { initialData, lineData, barData, pieData } from '../../utils/dummy'
+const secret=process.env.REACT_APP_SECRET
 
 interface CreateModalProps {
     open: boolean;
@@ -133,7 +134,9 @@ function CreateModal({ open, toggle }: CreateModalProps) {
     const createNewWidget = () => {
         const newData = [...data, newWidget]
         setData(newData)
-        localStorage.setItem("CruxWidgetData", JSON.stringify(newData))
+        let stringData = JSON.stringify(newData)
+        const encryptedData = CryptoJS.AES.encrypt(stringData, secret).toString()
+        localStorage.setItem("CruxWidgetData", encryptedData)
         closeModal()
     }
 

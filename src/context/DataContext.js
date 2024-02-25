@@ -1,15 +1,18 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import jsonData from "../utils/data.json"
-
+import CryptoJS from "crypto-js";
+const secret = process.env.REACT_APP_SECRET
 const DataContext = createContext();
 
 function DataProvider({children}){
     const [data, setData] = useState(jsonData);
 
     useEffect(()=>{
-        const data = JSON.parse(localStorage.getItem("CruxWidgetData"))
-        if(data && data.length>0){
-            setData(data)
+        let dataString = localStorage.getItem("CruxWidgetData")
+        if(dataString){
+            const bytes = CryptoJS.AES.decrypt(dataString, secret);
+            let localData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+            if(localData && localData.length>0) setData(localData)
         }
     },[])
 
