@@ -1,4 +1,3 @@
-import { Divider } from '@mui/material';
 import BarGraph from '../../Graphs/BarGraph';
 import LineGraph from '../../Graphs/LineGraph';
 import PieGraph from '../../Graphs/PieGraph';
@@ -50,7 +49,7 @@ function GraphWidget({ data, multiple }: WidgetProps) {
             <div className='widget-graph'>
                 {data.type == "1" && <BarGraph data={data.data} scale={data.barScale} color={data.color} />}
                 {data.type == "2" && <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-                    <LineGraph data={data.data} showAxisLabels={data.showAxisLabels} color={data.color} />
+                    <LineGraph data={data.data} showAxisLabels={data.showAxisLabels} />
                     {data.showLegend == "true" && <div style={{marginBottom:"20px", display:"flex", flexDirection:"column", gap:"20px"}}>
                         <svg width="154" height="2" viewBox="0 0 154 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1H153" stroke="#727272" stroke-linecap="round" />
@@ -71,7 +70,7 @@ function GraphWidget({ data, multiple }: WidgetProps) {
                     </div>}
                 </div>}
                 {data.type == "3" && <>
-                    <PieGraph data={data.data} color={data.color} />
+                    <PieGraph data={data.data} />
                     {data.showLegend == "true" && <div className='piechart-legend'>
                         <span>{data.legendData[0].title}</span>
                         <span>{data.legendData[0].data}</span>

@@ -5,10 +5,9 @@ const lineColors = ["#FB8181", "#5E5ADB", "#54D787", "#82D1DB", "#F0AB24"]
 interface Props{
     showAxisLabels: string | null;
     data: any[];
-    color: string | null;
 }
 
-function LineGraph({showAxisLabels, data, color}:Props) {
+function LineGraph({showAxisLabels, data}:Props) {
 
     return (
         <LineChart

@@ -20,6 +20,7 @@ function Home() {
     useEffect(() => {
         setData(jsonData)
         let temp = localStorage.getItem("CruxWidgetData")
+        // If any widget data pre exists in localstorage, use that. Otherwise use the json data and add that in localstorage
         if (temp) {
             temp = JSON.parse(temp)
             if (!temp || temp.length === 0) localStorage.setItem("CruxWidgetData", JSON.stringify(jsonData))
@@ -31,6 +32,7 @@ function Home() {
     return (
         <div className="home">
             {data.map((item: WidgetData, index: number) => {
+                // To assign the widgets an area class so that they can fit in the grid
                 let areaClass="area"
                 if(index<13) areaClass=areaClass+`${index+1}`
                 else areaClass=areaClass+0

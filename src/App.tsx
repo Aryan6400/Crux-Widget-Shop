@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Sidebar />
-      <div style={{ display: "flex", flexDirection: "column", width:"100%" }}>
+      <div style={{ display: "flex", flexDirection: "column", width:"100%", marginLeft:"80px" }}>
         <Navbar />
         <Home />
       </div>

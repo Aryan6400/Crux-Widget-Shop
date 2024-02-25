@@ -9,11 +9,10 @@ const data = [
 const COLORS = ['#FB8282', '#54D787', '#F2E144', '#5E5ADB'];
 
 interface Props {
-    color: string | null;
     data: any[];
   }
 
-function PieGraph({data, color}:Props) {
+function PieGraph({data}:Props) {
 
     return (
         <PieChart width={200} height={140}>
