@@ -1,0 +1,140 @@
+.data-widget-box {
+    border-radius: 15px;
+    border: 1px;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 0px 6px 0px #0000001A;
+    background: #FFFFFF;
+    height: fit-content;
+    width: fit-content;
+}
+
+.data-widget-box-blue{
+    background: #5E5ADB !important;
+}
+
+.data-widget-box-black{
+    background: #282828 !important;
+    border: 1px solid #757575 !important;
+}
+
+.data-widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 0;
+    margin-bottom: -10px;
+}
+
+.toggle-options {
+    display: flex;
+    gap: 15px;
+}
+
+.data-table {
+    display: flex;
+    padding: 0 15px;
+    gap: 5px;
+}
+
+.toggle-text {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BBBBBB;
+}
+
+.toggle-text-blue{
+    color: #f4f4f4;
+}
+
+.toggle-text-black{
+    color: #A0A0A0;
+}
+
+.toggle-text-active {
+    font-weight: 600 !important;
+    color: #5E5ADB !important;
+}
+
+.toggle-text-active-black {
+    color: #f4f4f4 !important;
+}
+
+.data-labels {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #474747A6;
+}
+
+.data-labels-blue-black{
+    color: #FFFFFFA6 !important;
+}
+
+.head-label {
+    font-weight: 700 !important;
+    color: #5E5ADB !important;
+}
+
+.head-label-blue-black{
+    color: #F1F1F2 !important;
+}
+
+.end-label {
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #393939E5 !important;
+}
+
+.end-label-blue-black{
+    color: #F4F4F4E5 !important;
+}
+
+.data-fields {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #474747A6;
+}
+
+.data-fields-blue-black{
+    color: #FFFFFFA6 !important;
+}
+
+.top-field {
+    font-size: 10px;
+    font-weight: 600;
+    color: #ABA8FF;
+}
+
+.top-field-blue-black{
+    color: #F1F1F299 !important;
+}
+
+.end-field {
+    font-size: 12px;
+    font-weight: 600;
+    color: #393939E5;
+}
+
+.end-field-blue-black{
+    color: #F4F4F4E5 !important;
+}
+
+.vertical-divider{
+    border-color: #F6F6F6 !important;
+}
+
+.vertical-divider-blue-black{
+    border-color: #F6F6F61A !important;
+}
+
+.line-svg{
+    width: 110px !important;
+}

@@ -1,0 +1,97 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E4E4E7;
+    height: 64px;
+    padding-right: 50px;
+}
+
+.left-nav,
+.right-nav {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    align-items: center;
+}
+
+.left-nav{
+    padding-left: 0px;
+}
+
+.right-nav {
+    gap: 20px;
+}
+
+.plus-icon {
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    left: 8px;
+    padding: 5px 1px 1px 5px;
+}
+
+.plus-icon svg {
+    width: 14px;
+    height: 14px;
+    top: 5px;
+    left: 5px;
+    border: 1.88px;
+}
+
+.navbar-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8D8D8D;
+}
+
+.active-nav-btn {
+    color: #5E5ADB !important;
+}
+
+.add-widget-link {
+    display: flex;
+    padding: 8px 25px 11px 8px;
+    border-radius: 8px;
+    gap: 10px;
+    border: 1px solid #5E5ADB26;
+    background: #5E5ADB0D;
+    height: 21px;
+    width: 115px;
+    cursor: pointer;
+}
+
+.nav-btn-box {
+    width: 90px;
+    padding: 0 15px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #F3F2FC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-btn-box-active {
+    border: 1px solid #E0DFF8 !important;
+    background: #F7F6FD;
+}
+
+.add-icon {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #5E5ADB26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #5E5ADB0D;
+    cursor: pointer;
+
+}

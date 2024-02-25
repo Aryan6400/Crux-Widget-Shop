@@ -1,0 +1,79 @@
+.graph-widget-box {
+    border-radius: 15px;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0px 0px 6px 0px #0000001A;
+    background: #FFFFFF;
+    height: fit-content;
+    width: fit-content;
+}
+
+.graph-widget-box-blue{
+    background: #5E5ADB !important;
+}
+
+.graph-widget-box-black{
+    background: #282828 !important;
+    border: 1px solid #757575 !important;
+}
+
+.graph-widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 0;
+    margin-bottom: -10px;
+}
+
+.widget-graph {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piechart-legend {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.recharts-cartesian-axis-tick line {
+    display: none;
+}
+
+.recharts-cartesian-axis-tick-value{
+    font-size: 10px !important;
+}
+
+.lineChart-legend{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.line-legend-title {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #AFAFAF;
+}
+
+.line-legend-data {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #4F4F4F;
+}
+
+.line-legend-title-blue-black{
+    color: #7E7E7E;
+}
+
+.line-legend-data-blue-black{
+    color: #F3F3F3;
+}
